@@ -21,7 +21,7 @@ layout: default
         background: rgba(0,0,0, {{ page.header-mask }});
     }
     {% endif %}
-</style>
+</style> <!---->
 <header class="intro-header" >
     <div class="header-mask"></div>
     <div class="container">
@@ -48,6 +48,7 @@ layout: default
 </header>
 
 <!-- Post Content -->
+
 <article>
     <div class="container">
         <div class="row">
@@ -90,9 +91,8 @@ layout: default
                     {% endif %}
                 </ul>
 
-
                 {% if site.disqus_username %}
-                <!-- disqus 评论框 start -->
+                <!-- disqus 评论框 start  
                 <div class="comment">
                     <div id="disqus_thread" class="disqus-thread"></div>
                 </div>
@@ -105,7 +105,6 @@ layout: default
                 <!-- 网易云跟帖 评论框 end -->
                 {% endif %}
             </div>  
-
     <!-- Side Catalog Container -->
         {% if page.catalog %}
             <div class="
@@ -121,7 +120,7 @@ layout: default
                     <ul class="catalog-body"></ul>
                 </div>
             </div>
-        {% endif %}
+        {% endif %} 
 
     <!-- Sidebar Container -->
             <div class="
@@ -133,7 +132,7 @@ layout: default
                 {% if site.featured-tags %}
                 <section>
                     <hr class="hidden-sm hidden-xs">
-                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <h5><a href="/tags/">TAGS</a></h5>
                     <div class="tags">
         				{% for tag in site.tags %}
                             {% if tag[1].size > {{site.featured-condition-size}} %}
@@ -149,7 +148,7 @@ layout: default
                 <!-- Friends Blog -->
                 {% if site.friends %}
                 <hr>
-                <h5>FRIENDS</h5>
+                <h5>LINKS</h5>
                 <ul class="list-inline">
                     {% for friend in site.friends %}
                         <li><a href="{{friend.href}}">{{friend.title}}</a></li>
@@ -159,7 +158,7 @@ layout: default
             </div>
         </div>
     </div>
-</article>
+</article> 
 
 
 {% if site.netease_comment %}
