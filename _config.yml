@@ -14,10 +14,10 @@ baseurl: ""                             # for example, '/blog' if your blog host
 RSS: false
 # weibo_username:     huxpro
 # zhihu_username:     huxpro
-# github_username:    huxpro
+github_username:    OWLxx
 # twitter_username:   huxpro
 # facebook_username:  huxpro
-# linkedin_username:  firstname-lastname-idxxxx
+linkedin_username:  xin-wen-840856104
 
 
 
@@ -95,5 +95,8 @@ friends: [
     },{
         title: "迁移学习手册",
         href: "https://zhuanlan.zhihu.com/p/35352154"
+    }, {
+        title: "ICLR2018",
+        href: "https://zhuanlan.zhihu.com/p/35586526"
     }
 ]
