@@ -54,12 +54,7 @@ change layout name in the front matter if it's not included
 
 2. layout should be HTML, like post.html
 
-   ```
-   <h1> this is a layout </h1>
-   <hr>
-
-   {{ content }}
-   ```
+   ​
 
    ​
 
