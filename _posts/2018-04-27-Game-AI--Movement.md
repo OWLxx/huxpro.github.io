@@ -24,3 +24,28 @@ tags:
 目前，dynamic movement 逐渐在取代kinematic movement. dynamic 需要考虑物体的动量， 输出为给物体的力，或者加速度。Kinematic只是需要给出物体移动的方向。
 
 [Flocking algorithm](https://en.wikipedia.org/wiki/Flocking_(behavior))同样是一种重要的movement算法
+
+### 2. Kinematic movement algorithms
+
+使用静态数据（位置，朝向，不包括速度），输出满意的速度(full speed), 没有加速度，但是加速减速的过程可以用几帧动画表示。
+
+```python
+class Kinematic:
+    def __init__(self):
+    	self.position = [0, 0]
+    	self.orientation = 0.0  # 朝向, 一个角度即可
+    	self.velocity = [0, 0]
+    	self.rotation = 0.0
+        
+    def update(self, steering, time):
+        self.position += self.velocity * time
+        self.orientation += self.rotation * time
+        # update velocity and rotation
+        self.velocity += steering.linear * time
+        self.rotation += sttering.rotation * time
+       
+```
+
+```python
+
+```
